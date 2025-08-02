@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CHARACTER ENCODING AND VIEWPORT FOR RESPONSIVE DESIGN -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- PAGE TITLE -->
+    <title>My Portfolio</title>
+    
+    <!-- EXTERNAL RESOURCES -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- GOOGLE FONTS - POPPINS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- ==================== NAVIGATION BAR ==================== -->
+   <header>
+    <nav class="navbar">
+        <!-- LOGO WITH ORANGE ACCENT COLOR -->
+        <div class="logo">
+            <a href="#" style="color: #ED9315; text-decoration: none;">Girmay G.</a>
+        </div>
+        
+        <!-- MOBILE HAMBURGER MENU TOGGLE (HIDDEN ON DESKTOP) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span> <!-- Top bar -->
+            <span></span> <!-- Middle bar -->
+            <span></span> <!-- Bottom bar -->
+        </label>
+        
+        <!-- PRIMARY NAVIGATION LINKS -->
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#languages">Programming</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+<section id="hero">
+    <div class="hero-content">
+        <!-- MAIN HEADLINE WITH NAME HIGHLIGHT -->
+        <h1>Hi, I'm <span class="highlight">Girmay Gebremeskel</span></h1>
+        
+        <!-- SUBTITLE WITH TYPING EFFECT -->
+        <p class="subtitle">A passionate <span id="typing-effect">Web Developer</span> from Ethiopia!</p>
+        
+        <!-- CALL-TO-ACTION BUTTON -->
+        <a href="#projects" class="cta-button">View My Work</a>
+    </div>
+</section>
+
+<!-- SECTION DIVIDER WITH GRADIENT EFFECT -->
+<div class="section-divider"></div>
+
+<!-- ==================== ABOUT ME SECTION ==================== -->
+<section id="about">
+  <div class="about-container">
+    <!-- SECTION TITLE WITH HIGHLIGHT -->
+    <h2>About <span class="highlight">Me</span></h2>
+    
+    <div class="about-content">
+      <!-- PROFILE PHOTO CARD -->
+      <div class="photo-card">
+        <img src="images/myPhoto.jpg" alt="Girmay Gebremeskel" class="profile-img">
+      </div>
+      
+      <!-- FLIP CARDS CONTAINER -->
+      <div class="info-cards">
+        <!-- STORY CARD -->
+        <div class="card">
+          <div class="card-inner">
+            <!-- FRONT SIDE OF CARD -->
+            <div class="card-front">
+              <h3>My Story</h3>
+              <div class="icon">📜</div> <!-- Scroll emoji representing story -->
+            </div>
+            <!-- BACK SIDE OF CARD -->
+            <div class="card-back">
+              <p class="teaser">Started coding at 19 with HTML/CSS...</p>
+              <a href="#full-story" class="read-more">Read More →</a> <!-- Expand link -->
+            </div>
+          </div>
+        </div>
+        
+        <!-- PASSION CARD -->
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>My Passion</h3>
+              <div class="icon">💡</div> <!-- Lightbulb emoji representing ideas -->
+            </div>
+            <div class="card-back">
+              <p>I'm passionate about crafting solutions that blend visual appeal with practical functionality
+                 to solve real-world problems I observe.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FUN FACT CARD -->
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Fun Fact</h3>
+              <div class="icon">🧩</div> <!-- Puzzle emoji representing curiosity -->
+            </div>
+            <div class="card-back">
+              <p>I love learning everything from scratch, even if it's just how a button works!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- EXPANDED BIO SECTION (HIDDEN BY DEFAULT) -->
+      <div id="full-story" class="story-expanded">
+        <div class="expanded-content">
+          <h3 class="expanded-title">My Coding Journey</h3>
+          <p>My journey began with a strong curiosity for technology and problem-solving. 
+            During university, I studied Computer Science and Engineering,
+             where I developed a deep interest in Python and web development.</p> 
+             <p>Today, I specialize in building responsive web applications using React and Django, 
+            always aiming for clean code and intuitive user experiences.</p>
+          <a href="#about" class="read-less">← Back to Cards</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TECH STACK SECTION ==================== -->
+<section id="languages">
+  <div class="container">
+    <h2>My <span class="highlight">Tech Stack</span></h2>
+    
+    <!-- SKILL BARS CONTAINER -->
+    <div class="skills-container">
+      <!-- PHP SKILL -->
+      <div class="skill">
+        <div class="skill-info">
+          <span class="skill-name">PHP</span>
+          <span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-level" data-level="85%"></div> <!-- Animated bar -->
+        </div>
+        <div class="skill-description">
+          <p>Built my Bsc. final year project using PHP</p>
+        </div>
+      </div>
+      
+      <!-- JAVASCRIPT SKILL -->
+      <div class="skill">
+        <div class="skill-info">
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-percent">90%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-level" data-level="90%"></div>
+        </div>
+        <div class="skill-description">
+          <p>Developed 3+ interactive UIs with React</p>
+        </div>
+      </div>
+      
+      <!-- PYTHON SKILL -->
+      <div class="skill">
+        <div class="skill-info">
+          <span class="skill-name">Python</span>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-level" data-level="80%"></div>
+        </div>
+        <div class="skill-description">
+          <p>Created data analysis tools and REST APIs with Django</p>
+        </div>
+      </div>
+      
+      <!-- REACT SKILL -->
+      <div class="skill">
+        <div class="skill-info">
+          <span class="skill-name">React</span>
+          <span class="skill-percent">88%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-level" data-level="88%"></div>
+        </div>
+        <div class="skill-description">
+          <p>Built 3+ using Context API</p>
+        </div>
+      </div>
+      
+      <!-- NODE.JS SKILL -->
+      <div class="skill">
+        <div class="skill-info">
+          <span class="skill-name">Node.js</span>
+          <span class="skill-percent">87%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-level" data-level="87%"></div>
+        </div>
+        <div class="skill-description">
+          <p>Developed scalable backend services and microservices</p>
+        </div>
+      </div>
+      
+      <!-- EXPRESS SKILL -->
+      <div class="skill">
+        <div class="skill-info">
+          <span class="skill-name">Express</span>
+          <span class="skill-percent">83%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-level" data-level="83%"></div>
+        </div>
+        <div class="skill-description">
+          <p>Created 3+ RESTful APIs with JWT authentication</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== EDUCATION SECTION ==================== -->
+<section id="education" style="padding-top: 8rem;">
+  <div class="container">
+    <h2 style="color: #fff;">Education   <span class="highlight">Background</span></h2>
+    
+    <div class="education-timeline">
+      <div class="education-item">
+        <!-- GRADUATION CAP EMOJI -->
+        <div class="education-icon">🎓</div>
+        <div class="education-content">
+          <h3>MSc. in Computer Science & &nbsp;<span class="highlight">Engineering</span> </h3>
+          <p class="university">Adama Science and Technology University</p>
+          <p class="date">2020 - 2022</p>
+          <div class="education-details">
+            <p>Thesis: <em>"Tigrinya Hate Speech Detection From Facebook Using Deep Learning Approaches"</em></p>
+          </div>
+          <!-- CV DOWNLOAD BUTTON -->
+          <a href="cv/Girmay CV.pdf" download class="download-cv">
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PROJECTS SECTION ==================== -->
+<section id="projects" class="section-with-divider">
+  <div class="container">
+    <h2 style="color: #fff;">Featured <span class="highlight">Projects</span></h2>
+    
+    <div class="projects-grid">
+      <!-- NETFLIX CLONE PROJECT -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🎬</div> <!-- Film emoji -->
+          <h3 style="color: #fff;">Netflix Clone</h3>
+        </div>
+        <div class="project-tech">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Firebase</span>
+        </div>
+        <p class="project-desc">
+          A full-stack Netflix replica with movie trailers, user authentication, and responsive design.
+        </p>
+        <div class="project-links">
+          <a href="https://netflix-clone-91b4f.web.app/" target="_blank" class="live-demo">
+            Live Demo
+          </a>
+          <a href="#" class="code-link">
+            View Code
+          </a>
+        </div>
+      </div>
+      
+      <!-- AMAZON CLONE PROJECT -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🛒</div> <!-- Shopping cart emoji -->
+          <h3 style="color: #fff;">Amazon Clone</h3>
+        </div>
+        <div class="project-tech">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Stripe API</span>
+        </div>
+        <p class="project-desc">
+          E-commerce platform with product listings, cart functionality, and mock payments.
+        </p>
+        <div class="project-links">
+          <a href="https://clone-2266b.web.app/" target="_blank" class="live-demo">
+            Live Demo
+          </a>
+          <a href="#" class="code-link">
+            View Code
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT SECTION ==================== -->
+<section id="contact" class="section-with-divider">
+  <div class="container">
+    <h2 style="color: #fff;">Get In <span class="highlight">Touch</span></h2>
+    
+    <div class="contact-content">
+      <!-- CONTACT INFORMATION -->
+      <div class="contact-info">
+        <h3 style="color: #fff;">Contact Information</h3>
+        <div class="info-item">
+          <div class="info-icon">📧</div> <!-- Email emoji -->
+          <p>Email: <span style="color: #ED9315;">girmaygebremeskel569@gmail.com</span></p>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📱</div> <!-- Phone emoji -->
+          <p>Phone: <span style="color: #ED9315;">+251 936 918 125</span></p>
+        </div>
+      </div>
+      
+      <!-- CONTACT FORM -->
+      <form class="contact-form">
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 2rem;">
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="footer-content">
+    <!-- FOOTER LOGO -->
+    <div class="footer-logo">
+      <a href="#">Girmay G.</a>
+    </div>
+    
+    <!-- FOOTER LINKS -->
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#languages">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    
+    <!-- SOCIAL MEDIA LINKS WITH EMOJIS -->
+    <div class="footer-social">
+       <!-- GitHub Link -->
+      <a href="https://github.com/Girmay18" target="_blank" aria-label="GitHub" class="social-link">
+  <span class="social-text">GitHub</span>
+  <span class="social-emoji">🐱</span>
+</a><!-- Cat emoji for GitHub -->
+       <!-- LinkedIn Link -->
+  <a href="https://www.linkedin.com/in/girmaygebremeskel/" target="_blank" aria-label="LinkedIn" class="social-link">
+    <span class="social-text">LinkedIn</span>
+    <span class="social-emoji">💼</span>
+  </a>
+      
+       <a href="#" aria-label="Home" class="nav-link">
+    <span class="nav-text">Home</span>
+    <span class="nav-emoji">🏠</span>
+  </a>
+  
+    </div>
+    
+    <!-- COPYRIGHT NOTICE -->
+    <div class="footer-copyright">
+      <p>&copy; 2025 Girmay Gebremeskel. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
